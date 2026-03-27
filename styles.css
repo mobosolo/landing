@@ -1,0 +1,285 @@
+:root {
+  --bg: #f6f4ef;
+  --surface: #ffffff;
+  --text: #141414;
+  --muted: #6b6b6b;
+  --primary: #1e7f5c;
+  --accent: #f15a24;
+  --border: #e6e1d8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", "Segoe UI", Tahoma, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.hero {
+  background: radial-gradient(1200px 600px at 10% 20%, #f7ead7, transparent),
+    radial-gradient(1000px 600px at 90% 0%, #d6f0e3, transparent);
+  padding: 32px 0 60px;
+}
+
+.nav {
+  max-width: 1100px;
+  margin: 0 auto 32px;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.hero-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 42px;
+  margin: 0 0 12px;
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.cta {
+  margin: 24px 0 12px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  border-radius: 999px;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-ghost {
+  background: transparent;
+  border-color: var(--border);
+  color: var(--text);
+}
+
+.meta {
+  color: var(--muted);
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.dot {
+  color: #c7c1b6;
+}
+
+.hero-card {
+  display: flex;
+  justify-content: center;
+}
+
+.phone {
+  width: 280px;
+  background: #111;
+  border-radius: 32px;
+  padding: 14px;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.speaker {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 6px;
+  background: #333;
+  border-radius: 6px;
+}
+
+.screen {
+  background: var(--surface);
+  border-radius: 22px;
+  padding: 18px;
+  min-height: 360px;
+  display: grid;
+  gap: 12px;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 14px;
+  background: #fff8f2;
+}
+
+.card.alt {
+  background: #f2f9f5;
+}
+
+.card-title {
+  font-weight: 700;
+}
+
+.card-sub {
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.card-price {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.old {
+  text-decoration: line-through;
+  color: var(--muted);
+}
+
+.new {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.pill {
+  margin-top: 10px;
+  display: inline-block;
+  background: #e4f2ec;
+  color: var(--primary);
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.feature {
+  background: var(--surface);
+  border-radius: 16px;
+  padding: 18px;
+  border: 1px solid var(--border);
+}
+
+.feature ul {
+  padding-left: 18px;
+  margin: 12px 0 0;
+  color: var(--muted);
+}
+
+.download {
+  background: #fff;
+}
+
+.download-card {
+  margin-top: 20px;
+  background: var(--surface);
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.apk-name {
+  font-weight: 700;
+}
+
+.apk-meta {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.note {
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.footer {
+  padding: 24px 0;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+}
